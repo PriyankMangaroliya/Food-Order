@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical"
+    tools:context=".Registration">
+
+    <androidx.cardview.widget.CardView style="@style/card">
+
+        <LinearLayout style="@style/linearlayoutvertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/register" />
+
+            <EditText
+                android:id="@+id/edname"
+                style="@style/EditText"
+                android:hint="Full Name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edemail"
+                style="@style/EditText"
+                android:hint="Email"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edcontact"
+                style="@style/EditText"
+                android:hint="Contact Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:minLines="10" />
+
+            <EditText
+                android:id="@+id/edaddress"
+                style="@style/EditText"
+                android:hint="Address"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edPassword"
+                style="@style/EditText"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/edCPassword"
+                style="@style/EditText"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/Signup"
+                style="@style/button"
+                android:background="@drawable/button"
+                android:text="Register" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Already Have an account ? "
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/clickSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textColor="@color/bgcolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

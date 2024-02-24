@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/r1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/img"
+        android:text="Name :"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/foodname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/name"
+        android:textColor="@color/text"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/qtytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodname"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/img"
+        android:text="Qtauntity :"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodname"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/qtytext"
+        android:textColor="@color/text"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/pricetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qtytext"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/img"
+        android:text="Price :"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/rupee2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/qty"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/pricetext"
+        android:src="@drawable/rupee" />
+
+    <TextView
+        android:id="@+id/totalprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qty"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/rupee2"
+        android:textColor="@color/text"
+        android:textSize="25dp" />
+
+</RelativeLayout>
